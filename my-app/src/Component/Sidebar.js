@@ -23,7 +23,8 @@ import {
   ExpandMore as ExpandMoreIcon,
   ExpandLess as ExpandLessIcon,
   ChevronLeft as ChevronLeftIcon,
-  ChevronRight as ChevronRightIcon
+  ChevronRight as ChevronRightIcon,
+  Person as PersonIcon
 } from '@mui/icons-material';
 
 function Sidebar() {
@@ -170,6 +171,12 @@ function Sidebar() {
               TEAM
             </Typography>
           )}
+   <ListItem component={NavLink} to="/user" sx={sidebarItemStyle}>
+          <ListItemIcon sx={{ color: 'inherit', minWidth: 40 }}>
+            <PersonIcon />
+          </ListItemIcon>
+          <ListItemText primary="USER" primaryTypographyProps={{ fontSize: 13, fontWeight: 500 }} />
+        </ListItem>
 
           <ListItem component={NavLink} to="/team" sx={sidebarItemStyle}>
             <ListItemIcon sx={{ color: 'inherit', minWidth: 40 }}>

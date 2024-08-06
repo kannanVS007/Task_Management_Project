@@ -1,0 +1,20 @@
+{
+    "users": [
+      {
+        "id": 1,
+        "name": "John Doe",
+        "email": "john@example.com",
+        "team": "Team A",
+        "role": "Manager",
+        "reporting": ""
+      },
+      {
+        "id": 2,
+        "name": "Jane Smith",
+        "email": "jane@example.com",
+        "team": "Team B",
+        "role": "User",
+        "reporting": "John Doe"
+      }
+    ]
+  }
